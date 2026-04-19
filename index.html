@@ -1,25 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <title>Fit-tomato</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit-tomato — Твой фитнес-помощник</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff4d4d;
+            --secondary: #005bff;
+            --dark: #1a1a1a;
+            --light: #ffffff;
+            --gray: #f4f4f4;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--gray);
+            color: var(--dark);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: var(--light);
+            max-width: 500px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .logo { font-size: 50px; margin-bottom: 10px; }
+        
+        h1 { 
+            font-size: 2.5rem; 
+            font-weight: 800; 
+            color: var(--primary); 
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .auth-note {
+            background: #fff5f5;
+            padding: 12px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            color: #d63031;
+            margin-bottom: 30px;
+            border: 1px solid #fed7d7;
+        }
+
+        .btn-rustore {
+            display: block;
+            background: var(--secondary);
+            color: white;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+            margin-bottom: 20px;
+        }
+
+        .btn-rustore:hover { opacity: 0.9; }
+
+/* Добавьте это в секцию стилей */
+        footer {
+            margin-top: auto;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #666;
+            border-top: 1px solid #eee;
+            background: #fff;
+        }
+
+        .footer-links {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #005bff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: opacity 0.2s;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+        }
+
+        .copyright {
+            opacity: 0.6;
+            font-size: 0.75rem;
+        }
+
+        .divider { margin: 0 10px; color: #ccc; }
+    </style>
 </head>
 <body>
 
-  <h1>Fit-tomato</h1>
+    <div class="content">
+        <div class="card">
+            <div class="logo">🍅</div>
+            <h1>Fit-tomato</h1>
+            
+            <p class="description">
+                Fit-tomato — мобильное приложение для отслеживания тренировок, 
+                управления таймерами отдыха и повышения эффективности ваших занятий спортом.
+            </p>
 
-  <p>
-    Fit-tomato is a mobile application that helps you track workouts,
-    manage rest timers, and improve your training efficiency.
-  </p>
+            <div class="auth-note">
+                This app uses Google Sign-In for secure user authentication and data synchronization.
+            </div>
 
-  <p>
-    This app uses Google Sign-In for authentication.
-  </p>
+            <a href="https://www.rustore.ru/catalog/app/com.mfred.fittomato" class="btn-rustore">
+                Скачать в RuStore
+            </a>
+        </div>
+    </div>
 
-  <p>
-    <a href="./privacy.html">Privacy Policy</a>
-  </p>
-
+<footer>
+        <div class="footer-links">
+            <a href="./privacy.html">Privacy Policy</a>
+            <a href="./disclaimer.html">Отказ от ответственности</a>
+            <a href="mailto:nkfrvv@gmail.com">Поддержка</a>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Fit-tomato. Все права защищены.
+        </div>
+    </footer>
 </body>
 </html>
