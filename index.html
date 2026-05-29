@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fit-tomato — Трекер тренировок с офлайн-режимом</title>
-    <meta name="description" content="Минималистичный дневник тренировок. Планы, прогресс и таймер отдыха — работает без интернета.">
+    <meta name="description" content="Минималистичный дневник тренировок. Планы, прогресс и таймер отдыха — работает без интернета, рекламы и подписок.">
     <link rel="icon" type="image/x-icon" href="/icon.ico">
-    <!-- Google Fonts -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
@@ -29,10 +27,8 @@
 </head>
 <body class="bg-[#020617] text-slate-50 min-h-screen flex flex-col">
 
-    <!-- Фоновая сетка -->
     <div class="fixed inset-0 bg-grid pointer-events-none"></div>
 
-    <!-- Навигация -->
     <nav class="fixed w-full z-50 bg-[#020617]/80 backdrop-blur-md border-b border-white/5">
         <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
             <div class="flex items-center gap-3 font-bold text-xl tracking-tight">
@@ -40,14 +36,14 @@
                 <span>FIT-TOMATO</span>
             </div>
             <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
-                <a href="#features" class="hover:text-red-500 transition-colors">Функции</a>
+                <a href="#features" class="hover:text-red-500 transition-colors">Преимущества</a>
+                <a href="#details" class="hover:text-red-500 transition-colors">Функции</a>
                 <a href="#about" class="hover:text-red-500 transition-colors">Об авторе</a>
                 <a href="mailto:nkfrvv@gmail.com" class="text-white bg-white/5 px-4 py-2 rounded-xl border border-white/10 hover:bg-white/10 transition-all">Поддержка</a>
             </div>
         </div>
     </nav>
 
-    <!-- Главный экран (Hero) -->
     <main class="relative pt-32 pb-20 px-6 flex-grow">
         <div class="tomato-glow absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] pointer-events-none"></div>
         
@@ -57,11 +53,11 @@
                     <span>INDIE APP • DEVELOPED BY SENIOR FRONTEND</span>
                 </div>
                 <h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight tracking-tight">
-                    Тренируйся <br>
-                    <span class="text-red-500">без лишнего.</span>
+                    Твой зал — <br>
+                    <span class="text-red-500">твои правила.</span>
                 </h1>
                 <p class="text-lg text-slate-400 mb-10 max-w-lg mx-auto lg:mx-0 leading-relaxed">
-                    Мобильное приложение для отслеживания тренировок, управления таймерами отдыха и повышения вашей эффективности. Работает офлайн.
+                    Чистый, лаконичный дневник тренировок без визуального шума. Никакой навязчивой рекламы, скрытых подписок и ограничений. Только твои веса, подходы и чистый прогресс.
                 </p>
                 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -72,7 +68,6 @@
                     </a>
                 </div>
 
-                <!-- Блок про авторизацию (сохранил твой текст) -->
                 <div class="mt-8 p-4 bg-white/5 border border-white/10 rounded-2xl max-w-md mx-auto lg:mx-0 flex gap-3">
                     <i data-lucide="shield-check" class="w-5 h-5 text-red-500 shrink-0"></i>
                     <p class="text-xs text-slate-400 text-left">
@@ -81,47 +76,97 @@
                 </div>
             </div>
 
-            <!-- Имитация скриншота/Интерфейса -->
             <div class="flex justify-center relative">
-                <div class="absolute inset-0 bg-red-500/20 blur-[100px] rounded-full"></div>
-                <div class="relative w-[280px] h-[580px] bg-slate-900 rounded-[2rem] border-[8px] border-slate-800 overflow-hidden shadow-2xl">
-                    <!-- Скриншот приложения -->
-                    <img src="/screen.jpg" alt="Fit Tomato App UI" class="w-full h-full hover:grayscale-0 transition-all duration-500">
+                <div class="absolute inset-0 bg-red-500/10 blur-[100px] rounded-full"></div>
+                <div class="relative w-[300px] h-[600px] bg-slate-950 rounded-[2.5rem] border-[6px] border-slate-800 overflow-hidden shadow-2xl flex items-center justify-center">
+                    <img src="/screen.jpg" alt="Fit Tomato App UI" class="w-full h-full object-cover rounded-[2.2rem]">
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Секция фич -->
     <section id="features" class="py-24 bg-slate-900/50 border-y border-white/5 relative z-10">
         <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-extrabold text-center mb-16 tracking-tight">Почему атлеты выбирают Fit Tomato</h2>
             <div class="grid md:grid-cols-3 gap-12">
                 <div class="space-y-4 group">
                     <div class="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center text-red-500 group-hover:scale-110 transition-transform">
                         <i data-lucide="wifi-off"></i>
                     </div>
-                    <h3 class="text-xl font-bold">Офлайн-режим</h3>
-                    <p class="text-slate-400 leading-relaxed text-sm">Планы и упражнения доступны без интернета. Данные синхронизируются автоматически при появлении сети.</p>
+                    <h3 class="text-xl font-bold">Автономность 100%</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">Забыли про плохую связь в подвальных фитнес-клубах. Логируйте подходы полностью офлайн. Локальная база мгновенно сохранит данные.</p>
                 </div>
                 <div class="space-y-4 group">
                     <div class="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center text-red-500 group-hover:scale-110 transition-transform">
                         <i data-lucide="timer"></i>
                     </div>
-                    <h3 class="text-xl font-bold">Таймер отдыха</h3>
-                    <p class="text-slate-400 leading-relaxed text-sm">Встроенный помощник не даст вам засидеться между подходами. Полный фокус на результате.</p>
+                    <h3 class="text-xl font-bold">Умный таймер отдыха</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">Контролируйте время восстановления между сетами. Таймер деликатно подскажет, когда пора начинать следующий тяжелый подход.</p>
                 </div>
                 <div class="space-y-4 group">
                     <div class="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center text-red-500 group-hover:scale-110 transition-transform">
-                        <i data-lucide="trending-up"></i>
+                        <i data-lucide="share-2"></i>
                     </div>
-                    <h3 class="text-xl font-bold">Рост прогресса</h3>
-                    <p class="text-slate-400 leading-relaxed text-sm">История всех тренировок и аналитика объемов в детальном просмотре каждой сессии.</p>
+                    <h3 class="text-xl font-bold">Шеринг программ</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">Делитесь своими планами тренировок с друзьями или подопечными по одной ссылке. Импорт программы происходит буквально в один клик.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- О разработчике -->
+    <section id="details" class="py-24 px-6 relative z-10 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-extrabold mb-6 tracking-tight">Всё необходимое. <br><span class="text-red-500">Ничего лишнего.</span></h2>
+                <ul class="space-y-4 text-slate-300 text-sm">
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
+                        <span><strong>Гибкий конструктор:</strong> Создавайте собственные упражнения и комбинируйте их в персональные тренировочные фазы.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
+                        <span><strong>Учет инвентаря:</strong> Удобно вести учет весов, будь то регулируемые гантели, штанги или работа с собственным весом.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
+                        <span><strong>Наглядная история:</strong> Детальный просмотр прошлых сессий и объемов для точного отслеживания прогрессии нагрузок.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0 mt-0.5"></i>
+                        <span><strong>Безопасное облако:</strong> Синхронизация через надежную инфраструктуру Supabase гарантирует сохранность данных при смене смартфона.</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="bg-slate-900/40 p-8 rounded-3xl border border-white/5 space-y-6">
+                <h3 class="text-lg font-bold tracking-tight text-slate-200">Философия разработки</h3>
+                <div class="space-y-4">
+                    <div class="flex gap-4">
+                        <div class="font-mono text-red-500 font-bold bg-red-500/10 w-8 h-8 rounded-lg flex items-center justify-center shrink-0">1</div>
+                        <div>
+                            <h4 class="font-semibold text-sm">Offline-First</h4>
+                            <p class="text-xs text-slate-400 mt-1">Интерфейс не «фризит» в ожидании ответов от сервера. Запись идет моментально.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="font-mono text-red-500 font-bold bg-red-500/10 w-8 h-8 rounded-lg flex items-center justify-center shrink-0">2</div>
+                        <div>
+                            <h4 class="font-semibold text-sm">Zero Trash Policy</h4>
+                            <p class="text-xs text-slate-400 mt-1">Никаких маркетинговых пушей, предложений купить премиум-подписку или баннеров во весь экран.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="font-mono text-red-500 font-bold bg-red-500/10 w-8 h-8 rounded-lg flex items-center justify-center shrink-0">3</div>
+                        <div>
+                            <h4 class="font-semibold text-sm">Data Ownership</h4>
+                            <p class="text-xs text-slate-400 mt-1">Ваши тренировки принадлежат только вам. Безопасная аутентификация через Google.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="about" class="py-24 px-6 relative z-10">
         <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-3xl font-bold mb-8">О разработчике</h2>
@@ -136,7 +181,6 @@
         </div>
     </section>
 
-    <!-- Футер -->
     <footer class="mt-auto py-12 px-6 border-t border-white/5 bg-slate-950 relative z-10">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex gap-6 text-sm font-medium">
