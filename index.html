@@ -6,16 +6,11 @@
     <title>Fit-tomato — Трекер тренировок с офлайн-режимом</title>
     <meta name="description" content="Минималистичный дневник тренировок. Планы, прогресс и таймер отдыха — работает без интернета, рекламы и подписок.">
     <link rel="icon" type="image/x-icon" href="/icon.ico">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/tailwind.min.css">
+    <script src="js/lucide.min.js"></script>
 
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
         .bg-grid {
             background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
             background-size: 40px 40px;
@@ -68,7 +63,7 @@
                     </a>
                 </div>
 
-                <div class="mt-8 p-4 bg-white/5 border border-white/10 rounded-2xl max-w-md mx-auto lg:mx-0 flex gap-3">
+                <div style="display:none;" class="mt-8 p-4 bg-white/5 border border-white/10 rounded-2xl max-w-md mx-auto lg:mx-0 flex gap-3">
                     <i data-lucide="shield-check" class="w-5 h-5 text-red-500 shrink-0"></i>
                     <p class="text-xs text-slate-400 text-left">
                         This app uses Google Sign-In for secure user authentication and data synchronization.
